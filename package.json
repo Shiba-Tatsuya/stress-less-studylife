@@ -3,10 +3,12 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://shiba-tatsuya.github.io/stress-less-studylife/",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
-    "deploy": "gh-pages -d build",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
     "preview": "vite preview"
